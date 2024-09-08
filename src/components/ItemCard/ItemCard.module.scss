@@ -1,0 +1,78 @@
+@keyframes move {
+    0% {
+        transform: rotate(4deg)
+    }
+
+    25% {
+        transform: rotate(-4deg)
+    }
+
+    50% {
+        transform: rotate(4deg)
+    }
+
+    75% {
+        transform: rotate(-4deg)
+    }
+
+    100% {
+        transform: rotate(4deg)
+    }
+}
+
+.root {
+    max-width: 800px;
+    margin: 0 auto;
+    border-bottom: 5px dotted #f4c86a;
+
+    @media (max-width: 768px) {
+        padding: 20px;
+    }
+
+    .title {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        // margin-top: 0.83em;
+
+        h2 {
+            // margin-top: 0;
+            // margin-bottom: 0.83em;
+        }
+
+        .price {
+            display: flex;
+            animation-name: move;
+            animation-duration: 10s;
+            animation-iteration-count: infinite;
+
+            .priceTag {
+                font-size: 1.4em;
+                background-color: #EC7A13;
+                padding: 5px 10px;
+                display: flex;
+                place-items: center;
+                border-top-right-radius: 6px;
+                border-bottom-right-radius: 6px;
+
+
+            }
+        }
+
+
+
+        .triangleLeft {
+            width: 0;
+            height: 0;
+            border-top: 19px solid transparent;
+            border-bottom: 19px solid transparent;
+            border-right: 30px solid #EC7A13;
+        }
+
+    }
+
+    .desc {
+        font-family: "Josefin Sans", sans-serif;
+        // margin-top: 0;
+    }
+}

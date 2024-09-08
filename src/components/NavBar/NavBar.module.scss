@@ -1,0 +1,13 @@
+.root {
+    position: relative;
+    z-index: 2;
+
+}
+
+.menuList {
+    position: fixed;
+
+    @media (min-width:768px) {
+        position: static;
+    }
+}

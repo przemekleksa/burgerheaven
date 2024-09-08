@@ -1,0 +1,24 @@
+.root {
+    padding: 12px;
+    max-width: 600px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+
+    .header {
+        display: flex;
+        gap: 12px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .rating {
+        transform: translateY(2px);
+
+    }
+
+    .comment {
+        // font-family: "Caveat", cursive;
+        font-family: "Josefin Sans", sans-serif;
+        font-size: 1.2em;
+    }
+}

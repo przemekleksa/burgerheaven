@@ -1,0 +1,65 @@
+.root {
+    .position {
+        display: flex;
+        gap: 12px;
+        justify-content: center;
+        padding: 12px 0;
+        // flex-wrap: wrap;
+
+        @media (max-width:768px) {
+            scale: 0.95;
+        }
+
+        @media (min-width:768px) {
+            font-size: 2em;
+        }
+
+        .menuItem {
+            // border: 1px solid white;
+            padding: 10px;
+            cursor: pointer;
+            width: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+
+            // cursor: pointer;
+            span {
+                transition: 300ms ease-in-out;
+
+                &:hover {
+                    transform: rotate(-15deg);
+
+                }
+            }
+
+            &:hover {
+                // cursor: pointer;
+
+                // transform: skew(15deg);
+                &:after {
+                    transform: skew(-10deg);
+                    // cursor: pointer;
+                }
+            }
+
+            &::after {
+                content: '';
+                border: 1px solid white;
+                // background: white;
+
+                z-index: -1;
+                width: 102%;
+                height: 102%;
+                // background-color: red;
+                position: absolute;
+                transition: 300ms ease-in-out;
+
+                &:hover {
+                    transform: skew(15deg);
+                }
+            }
+        }
+    }
+}

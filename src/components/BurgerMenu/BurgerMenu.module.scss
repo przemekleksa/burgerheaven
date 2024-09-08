@@ -1,0 +1,87 @@
+.icon1,
+.icon2,
+.icon3 {
+  position: absolute;
+  left: 25%;
+  top: 50%;
+  width: 32px;
+  height: 3px;
+  background-color: black;
+  transition: all 400ms cubic-bezier(.84, .06, .52, 1.8);
+}
+
+.icon1 {
+  transform: translateY(-8px);
+  animation-delay: 100ms;
+}
+
+.icon3 {
+  transform: translateY(8px);
+  animation-delay: 250ms;
+}
+
+.hamburgerIcon {
+  position: fixed;
+  height: 60px;
+  width: 60px;
+  top: 15px;
+  right: 15px;
+  z-index: 2;
+  cursor: pointer;
+  border-radius: 50%;
+  transition: all 0.2s ease-in-out;
+  background: rgba(255, 255, 255, 0.2);
+
+  &:hover {
+    transform: scale(1.2);
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1);
+  }
+}
+
+.icon1a {
+  transform: rotate(40deg);
+}
+
+.icon3b {
+  transform: rotate(-40deg);
+}
+
+.icon2c {
+  opacity: 0;
+}
+
+.clear {
+  clear: both;
+}
+
+@keyframes slideIn {
+  0% {
+    width: 0%;
+    opacity: 0;
+  }
+
+  100% {
+    width: 50%;
+    opacity: 1;
+  }
+}
+
+
+.menu {
+  display: none;
+}
+
+.menuOpen {
+  display: block;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  min-width: 100dvw;
+  min-height: 100dvh;
+}
+
+@media (min-width: 768px) {
+  .hamburgerIcon {
+    display: none;
+  }
+}
