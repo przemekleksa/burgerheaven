@@ -1,0 +1,217 @@
+{
+  "navigation": {
+    "menu": "menu",
+    "home": "home",
+    "testimonials": "opinie",
+    "contact": "kontakt",
+    "book": "zarezerwuj"
+  },
+  "reviews": [
+    {
+      "id": 1,
+      "name": "Anna Kowalska",
+      "rating": 5,
+      "comment": "Burger Heaven to mój ulubiony lokal na burgerowy wieczór! Szczególnie polecam ich **Burger BBQ** – soczyste mięso, przepyszny sos BBQ i chrupiące cebulowe krążki. To połączenie, które uzależnia! Atmosfera restauracji jest przyjemna, a obsługa bardzo miła. Zdecydowanie wrócę!"
+    },
+    {
+      "id": 2,
+      "name": "Tomasz Nowak",
+      "rating": 4,
+      "comment": "Cheeseburger z Burger Heaven to klasyka w najlepszym wydaniu. Idealnie stopiony ser, świeża bułka i dobrze doprawione mięso. Jedyne, co bym zmienił, to odrobinę więcej warzyw w środku. Poza tym, lokal jest czysty, a obsługa szybka. Warto odwiedzić!"
+    },
+    {
+      "id": 3,
+      "name": "Maria Kaczmarek",
+      "rating": 5,
+      "comment": "Nie mogę przestać myśleć o ich **Spicy Jalapeno**! Jeśli lubisz ostrą kuchnię, to będzie strzał w dziesiątkę. Pikantne jalapeno dodaje idealnego kopa, a mięso jest zawsze świeże. Atmosfera w Burger Heaven jest przyjemna, a ceny rozsądne. Gorąco polecam!"
+    },
+    {
+      "id": 4,
+      "name": "Piotr Wiśniewski",
+      "rating": 5,
+      "comment": "Dzisiaj miałem okazję spróbować **Classic Burger** i muszę przyznać, że to jeden z najlepszych klasyków, jakie jadłem. Prosta, ale idealnie zbalansowana kompozycja składników. Bułka była świeża, mięso dobrze wysmażone, a sosy świetnie komponowały się z resztą. Idealne miejsce na szybki lunch!"
+    },
+    {
+      "id": 5,
+      "name": "Kasia Zielińska",
+      "rating": 4,
+      "comment": "Zamówiłam **Cheeseburger** i **Burger BBQ** na wynos. Oba były bardzo smaczne, ale **Burger BBQ** był dla mnie absolutnym faworytem. Świetne połączenie smaków i idealne dla osób, które lubią słodkie i pikantne jednocześnie. Jedyny minus to dłuższy czas oczekiwania, ale warto było!"
+    }
+  ],
+  "menu": {
+    "burgers": {
+      "name": "Burgery",
+      "menu": [
+        {
+          "id": 1,
+          "name": "Klasyczny Cheeseburger",
+          "description": "Soczysty kotlet wołowy z roztopionym serem cheddar, świeżą sałatą, pomidorami, ogórkami kiszonymi i naszym specjalnym sosem, podawany na opiekanej bułce z sezamem.",
+          "price": 8.99
+        },
+        {
+          "id": 2,
+          "name": "BBQ Bacon Burger",
+          "description": "Aromatyczny kotlet wołowy pokryty wędzonym sosem BBQ, chrupiącym bekonem, roztopionym serem szwajcarskim i krążkami cebulowymi. Wykończony sałatą i pomidorem na bułce brioche.",
+          "price": 10.49
+        },
+        {
+          "id": 3,
+          "name": "Burger z Grzybami i Szwajcarskim Serem",
+          "description": "Delikatny kotlet wołowy polany podsmażanymi grzybami i roztopionym serem szwajcarskim, z karmelizowaną cebulą i odrobiną czosnkowego aioli, serwowany na pełnoziarnistej bułce.",
+          "price": 9.29
+        },
+        {
+          "id": 4,
+          "name": "Ostry Burger Jalapeño",
+          "description": "Ostry kotlet wołowy przyprawiony naszą domową mieszanką przypraw, z dodatkiem świeżych jalapeño, sera pepper jack i pikantnego majonezu sriracha, podawany na ostrej bułce chipotle.",
+          "price": 10.99
+        },
+        {
+          "id": 5,
+          "name": "Vege Burger Delight",
+          "description": "Grillowany kotlet warzywny z czarną fasolą, kukurydzą i papryką, z plasterkami awokado, sałatą, pomidorem i pikantnym sosem chipotle, podawany na wieloziarnistej bułce.",
+          "price": 9.49
+        }
+      ]
+    },
+    "fries": {
+      "name": "Frytki",
+      "menu": [
+        {
+          "id": 1,
+          "name": "Frytki z batatów",
+          "description": "Słodkie i chrupiące frytki z batatów, podawane z sosem miodowo-musztardowym.",
+          "price": 15.99
+        },
+        {
+          "id": 2,
+          "name": "Frytki belgijskie",
+          "description": "Grube, chrupiące frytki w belgijskim stylu, serwowane z majonezem.",
+          "price": 12.99
+        },
+        {
+          "id": 3,
+          "name": "Frytki klasyczne",
+          "description": "Tradycyjne frytki, złociste i chrupiące, idealne do każdej potrawy.",
+          "price": 9.99
+        },
+        {
+          "id": 4,
+          "name": "Frytki z parmezanem i truflami",
+          "description": "Gourmet frytki posypane parmezanem i truflową posypką.",
+          "price": 19.99
+        },
+        {
+          "id": 5,
+          "name": "Frytki z batatów z guacamole",
+          "description": "Słodkie bataty podawane z domowym guacamole.",
+          "price": 17.99
+        }
+      ]
+    },
+    "snacks": {
+      "name": "Przekąski",
+      "menu": [
+        {
+          "id": 1,
+          "name": "Onion Rings",
+          "description": "Chrupiące krążki cebulowe, smażone na złoty kolor, podawane z sosem czosnkowym.",
+          "price": 8.99
+        },
+        {
+          "id": 2,
+          "name": "Mozzarella Sticks",
+          "description": "Kawałki mozzarelli w chrupiącej panierce, podawane z sosem marinara.",
+          "price": 10.99
+        },
+        {
+          "id": 3,
+          "name": "Chicken Wings",
+          "description": "Soczyste skrzydełka z kurczaka w pikantnej glazurze, podawane z dipem ranch.",
+          "price": 14.99
+        }
+      ]
+    },
+    "salads": {
+      "name": "Sałatki",
+      "menu": [
+        {
+          "id": 1,
+          "name": "Sałatka Cezar",
+          "description": "Tradycyjna sałatka Cezar z grillowanym kurczakiem, grzankami i sosem Cezar.",
+          "price": 18.99
+        },
+        {
+          "id": 2,
+          "name": "Sałatka Grecka",
+          "description": "Świeża sałatka grecka z fetą, oliwkami, pomidorami i ogórkiem, polana oliwą z oliwek.",
+          "price": 16.99
+        },
+        {
+          "id": 3,
+          "name": "Sałatka z Quinoą",
+          "description": "Lekka sałatka z quinoą, awokado, ciecierzycą i sosem cytrynowym.",
+          "price": 19.99
+        }
+      ]
+    },
+    "drinks": {
+      "name": "Napoje",
+      "menu": [
+        {
+          "id": 1,
+          "name": "Coca-Cola",
+          "description": "Kultowy napój gazowany, schłodzony i orzeźwiający.",
+          "price": 5.99
+        },
+        {
+          "id": 2,
+          "name": "Woda Mineralna",
+          "description": "Czysta, naturalna woda mineralna, gazowana lub niegazowana.",
+          "price": 4.99
+        },
+        {
+          "id": 3,
+          "name": "Fanta",
+          "description": "Orzeźwiający napój gazowany o smaku pomarańczowym.",
+          "price": 5.99
+        },
+        {
+          "id": 4,
+          "name": "Sprite",
+          "description": "Lekki i orzeźwiający napój gazowany o smaku cytrynowo-limonkowym.",
+          "price": 5.99
+        },
+        {
+          "id": 5,
+          "name": "Sok Pomarańczowy",
+          "description": "Świeżo wyciskany sok pomarańczowy, bogaty w witaminę C.",
+          "price": 6.99
+        }
+      ]
+    }
+  },
+  "booking": {
+    "book": "Zarezerwuj stolik",
+    "required": "Wymagane",
+    "partySize": "Liczba gości",
+    "phone": "Numer telefonu",
+    "enterPhone": "Podaj number telefonu",
+    "fullName": "Imię i nazwisko",
+    "enterName": "Wprowadź imię i nazwisko",
+    "specialRequest": "Specjalne życzenia",
+    "enterSpecialRequest": "Wprowadź specjalne życzenia",
+    "date": "Data",
+    "time": "Godzina",
+    "submit": "Wyślij",
+    "success": "You have booked a table!",
+    "tableSize": "Table for",
+    "when": "on"
+  },
+  "contact": {
+    "openingHours": "Godziny otwarcia",
+    "monFri": "Poniedziałek - Piątek",
+    "saturday": "Sobota",
+    "sunday": "Niedziela"
+  }
+}

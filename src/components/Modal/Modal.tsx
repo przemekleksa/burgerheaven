@@ -9,7 +9,7 @@ const Modal = ({ children, handleClick }: Props) => {
   return (
     <div className={styles.root}>
       <div className={styles.close} onClick={handleClick} />
-      {children}
+      <div className={styles.child}>{children}</div>
     </div>
   );
 };

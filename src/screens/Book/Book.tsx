@@ -1,12 +1,14 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { ErrorMessage, Field, Form, Formik } from 'formik';
 import * as Yup from 'yup';
 import styles from './Book.module.scss';
 import clsx from 'clsx';
 import DatePicker from 'react-datepicker';
 import 'react-datepicker/dist/react-datepicker.css';
-
 import Modal from '../../components/Modal/Modal';
+import { useTranslation } from 'react-i18next';
+import { enGB as en, pl } from 'date-fns/locale';
+import { Locale } from 'react-datepicker/dist/date_utils';
 
 const initValues = {
   phone: '',
@@ -59,8 +61,6 @@ const numberOfPeople = Array.from({ length: 21 })
   .map((_, i) => ({ value: i, label: i }))
   .slice(1);
 
-console.log(numberOfPeople);
-
 interface Booking {
   phone: string;
   name: string;
@@ -74,6 +74,14 @@ const Book = () => {
   const [dayOfTheWeek, setDayOfTheWeek] = useState<number | null>(null);
   const [showModal, setShowModal] = useState(true);
   const [booking, setBooking] = useState<Booking>();
+  const { t, i18n } = useTranslation();
+  const [language, setLanguage] = useState<Locale>(
+    i18n.language === 'pl' || i18n.language === 'pl-PL' ? pl : pl
+  );
+
+  useEffect(() => {
+    setLanguage(i18n.language === 'pl' || i18n.language === 'pl-PL' ? pl : en);
+  }, [i18n.language, language]);
 
   const handleClick = () => {
     setShowModal(false);
@@ -83,10 +91,10 @@ const Book = () => {
     return (
       <Modal handleClick={handleClick}>
         <div className={styles.modalRoot}>
-          <div>You have booked a table!</div>
+          <div>{t('booking.success')}</div>
           <div>
-            Table for {booking?.numberOfSeats} on {booking.bookingDate.toLocaleDateString('en-GB')}{' '}
-            {booking?.bookingTime}
+            {t('booking.tableSize')} {booking?.numberOfSeats} {t('booking.when')}{' '}
+            {booking.bookingDate.toLocaleDateString('en-GB')} {booking?.bookingTime}
           </div>
         </div>
       </Modal>
@@ -95,7 +103,7 @@ const Book = () => {
 
   return (
     <div className={styles.root}>
-      <h2>Book a table</h2>
+      <h2>{t('booking.book')}</h2>
       <Formik
         initialValues={initValues}
         onSubmit={values => {
@@ -108,7 +116,7 @@ const Book = () => {
         {({ setFieldValue, values }) => (
           <Form className={styles.form}>
             <div className={clsx(styles.numberOfSeats, styles.labelWithInput)}>
-              <label htmlFor="numberOfSeats">Liczba osób</label>
+              <label htmlFor="numberOfSeats">{t('booking.partySize')}</label>
               <Field as="select" id="numberOfSeats" name="numberOfSeats">
                 {numberOfPeople.map(number => (
                   <option key={number.value} value={number.value}>
@@ -119,28 +127,34 @@ const Book = () => {
               <ErrorMessage name="numberOfSeats" component="div" className={styles.error} />
             </div>
             <div className={clsx(styles.phone, styles.labelWithInput)}>
-              <label htmlFor="phone">Telefon</label>
+              <label htmlFor="phone">{t('booking.phone')}</label>
               <Field
                 type="text"
                 id="phone"
                 name="phone"
-                placeholder="Telefon"
+                placeholder={t('booking.enterPhone')}
                 className={styles.numberOfSeatsField}
               />
               <ErrorMessage name="phone" component="div" className={styles.error} />
             </div>
             <div className={clsx(styles.name, styles.labelWithInput)}>
-              <label htmlFor="name">Imię i nazwisko</label>
-              <Field type="text" id="name" name="name" placeholder="Podaj imię i nazwisko" />
+              <label htmlFor="name">{t('booking.fullName')}</label>
+              <Field type="text" id="name" name="name" placeholder={t('booking.enterName')} />
               <ErrorMessage name="name" component="div" className={styles.error} />
             </div>
             <div className={clsx(styles.notes, styles.labelWithInput)}>
-              <label htmlFor="notes">Uwagi</label>
-              <Field as="textarea" rows={4} id="notes" name="notes" placeholder="Uwagi" />
+              <label htmlFor="notes">{t('booking.specialRequest')}</label>
+              <Field
+                as="textarea"
+                rows={4}
+                id="notes"
+                name="notes"
+                placeholder={t('booking.enterSpecialRequest')}
+              />
               <ErrorMessage name="notes" component="div" className={styles.error} />
             </div>
             <div className={styles.datePicker}>
-              <label htmlFor="bookingDate">Data:</label>
+              <label htmlFor="bookingDate">{t('booking.date')}</label>
               <DatePicker
                 selected={values.bookingDate}
                 onChange={date => {
@@ -149,11 +163,12 @@ const Book = () => {
                 }}
                 className={styles.picker}
                 dateFormat="yyyy/dd/MM"
+                locale={language}
               />
 
               {dayOfTheWeek && (
                 <>
-                  <label htmlFor="bookingTime">Time:</label>
+                  <label htmlFor="bookingTime">{t('booking.time')}</label>
                   <Field as="select" id="bookingTime" name="bookingTime">
                     {options.map(
                       option =>
@@ -170,7 +185,7 @@ const Book = () => {
             </div>
 
             <button type="submit" className={styles.btn}>
-              Submit
+              {t('booking.submit')}
             </button>
           </Form>
         )}

@@ -1,5 +1,5 @@
 .root {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     min-width: 100dvw;
@@ -7,18 +7,28 @@
     display: flex;
     place-items: center;
     justify-content: center;
+    z-index: 3;
 
     .close {
         font-family: arial;
         scale: 5;
         cursor: pointer;
         position: absolute;
-        top: 100px;
+        top: 50px;
         right: 50px;
 
         &::after {
             content: '\00d7';
 
         }
+    }
+
+    .child {
+        display: flex;
+        place-items: center;
+        justify-content: center;
+        min-width: 100dvw;
+        min-height: 100dvh;
+        background: red;
     }
 }

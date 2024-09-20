@@ -1,53 +1,73 @@
 .root {
     margin: 0 auto;
     max-width: 600px;
-    padding: 12px;
+    // padding: 12px;
     font-size: 1.5em;
+    padding: 20px;
+    color: #201B13;
 
+    a {
+        color: #201B13;
 
-
-    .line {
-        display: flex;
-        place-items: center;
-        gap: 12px;
-        margin: 12px 0;
-
-        p {
-            margin: 0px;
-
-            a:hover {
-                color: #e0e557;
-                text-shadow: 0px 0px 2200px #e0e557;
-            }
+        &:hover {
+            color: #09B29B !important;
         }
     }
 
-    .openingHours {
-        margin: 12px 0;
+    .wrapper {
+        background: rgb(242, 242, 230);
+        // background: rgb(224, 229, 87);
+        // background: radial-gradient(circle, rgba(224, 229, 87, 1) 0%, rgba(253, 187, 45, 1) 100%);
+        // color: #09B29B;
 
-        .title {
+        padding: 12px;
+
+
+
+        .line {
+            display: flex;
+            place-items: center;
+            gap: 12px;
+            margin: 12px 0;
+
+            p {
+                margin: 0px;
+
+                a:hover {
+                    color: #e0e557;
+                    text-shadow: 0px 0px 2200px #e0e557;
+                }
+            }
+        }
+
+        .openingHours {
+            margin: 12px 0;
+
+            .title {
+                display: flex;
+                gap: 8px;
+            }
+
+            .hours {
+                margin-left: 33px;
+            }
+        }
+
+        .socials {
             display: flex;
             gap: 8px;
-        }
+            justify-content: center;
+            transition: 150ms ease-in-out;
 
-        .hours {
-            margin-left: 33px;
-        }
-    }
+            .social {
+                cursor: pointer;
 
-    .socials {
-        display: flex;
-        gap: 8px;
-        justify-content: center;
-        transition: 150ms ease-in-out;
-
-        .social {
-            cursor: pointer;
-
-            &:hover {
-                color: #e0e557;
-                box-shadow: 0px 20px 130px #e0e557;
+                &:hover {
+                    color: #e0e557;
+                    box-shadow: 0px 20px 130px #e0e557;
+                }
             }
         }
     }
+
 }

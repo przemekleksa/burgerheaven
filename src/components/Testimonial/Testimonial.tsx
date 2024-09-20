@@ -12,14 +12,14 @@ export const Testimonial = ({ review }: Props) => {
       <div className={styles.header}>
         <div className={styles.rating}>
           <svg width="0" height="0">
-            <linearGradient id="blue-gradient" x1="100%" y1="100%" x2="0%" y2="0%">
+            <linearGradient id="yellow-gradient" x1="100%" y1="100%" x2="0%" y2="0%">
               <stop stopColor="#eceade" offset="0%" />
               <stop stopColor="#f4c86a" offset="100%" />
             </linearGradient>
           </svg>
 
           {Array.from({ length: rating }).map((_, index) => (
-            <FaStar key={index} style={{ fill: 'url(#blue-gradient)' }} />
+            <FaStar key={index} style={{ fill: 'url(#yellow-gradient)' }} size={24} />
           ))}
         </div>
         <h3 className={styles.name}>{name}</h3>

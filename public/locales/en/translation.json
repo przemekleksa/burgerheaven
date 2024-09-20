@@ -1,0 +1,217 @@
+{
+  "navigation": {
+    "menu": "menu",
+    "home": "home",
+    "testimonials": "testimonials",
+    "contact": "contact",
+    "book": "book"
+  },
+  "reviews": [
+    {
+      "id": 1,
+      "name": "Anna Kowalska",
+      "rating": 5,
+      "comment": "Burger Heaven is my favorite spot for a burger night! I especially recommend their **BBQ Burger** – juicy meat, delicious BBQ sauce, and crispy onion rings. This combination is addictive! The restaurant atmosphere is pleasant, and the staff is very friendly. I’ll definitely be back!"
+    },
+    {
+      "id": 2,
+      "name": "Tomasz Nowak",
+      "rating": 4,
+      "comment": "The cheeseburger from Burger Heaven is a classic at its best. Perfectly melted cheese, fresh bun, and well-seasoned meat. The only thing I’d change is adding a bit more veggies inside. Other than that, the place is clean, and the service is fast. Worth a visit!"
+    },
+    {
+      "id": 3,
+      "name": "Maria Kaczmarek",
+      "rating": 5,
+      "comment": "I can’t stop thinking about their **Spicy Jalapeno**! If you like spicy food, this is a hit. The spicy jalapeno adds the perfect kick, and the meat is always fresh. The atmosphere at Burger Heaven is nice, and the prices are reasonable. Highly recommend!"
+    },
+    {
+      "id": 4,
+      "name": "Piotr Wiśniewski",
+      "rating": 5,
+      "comment": "Today I had the chance to try the **Classic Burger**, and I must say, it’s one of the best classics I’ve had. Simple, yet perfectly balanced composition of ingredients. The bun was fresh, the meat well-cooked, and the sauces blended well with the rest. The perfect place for a quick lunch!"
+    },
+    {
+      "id": 5,
+      "name": "Kasia Zielińska",
+      "rating": 4,
+      "comment": "I ordered the **Cheeseburger** and **BBQ Burger** to go. Both were very tasty, but **BBQ Burger** was my absolute favorite. Great flavor combination and perfect for those who like sweet and spicy at the same time. The only downside was the longer waiting time, but it was worth it!"
+    }
+  ],
+  "menu": {
+    "burgers": {
+      "name": "Burgers",
+      "menu": [
+        {
+          "id": 1,
+          "name": "Classic Cheeseburger",
+          "description": "A juicy beef patty topped with melted cheddar cheese, fresh lettuce, tomatoes, pickles, and our special sauce, all served on a toasted sesame seed bun.",
+          "price": 8.99
+        },
+        {
+          "id": 2,
+          "name": "BBQ Bacon Burger",
+          "description": "A savory beef patty covered with smoky BBQ sauce, crispy bacon, melted Swiss cheese, and onion rings. Finished with lettuce and tomato on a brioche bun.",
+          "price": 10.49
+        },
+        {
+          "id": 3,
+          "name": "Mushroom Swiss Burger",
+          "description": "A tender beef patty smothered in sautéed mushrooms and melted Swiss cheese, with caramelized onions and a touch of garlic aioli, served on a whole wheat bun.",
+          "price": 9.29
+        },
+        {
+          "id": 4,
+          "name": "Spicy Jalapeño Burger",
+          "description": "A spicy beef patty seasoned with our house blend of spices, topped with fresh jalapeños, pepper jack cheese, and a zesty sriracha mayo, all on a spicy chipotle bun.",
+          "price": 10.99
+        },
+        {
+          "id": 5,
+          "name": "Veggie Delight Burger",
+          "description": "A grilled veggie patty made with black beans, corn, and bell peppers, topped with avocado slices, lettuce, tomato, and a tangy chipotle sauce, served on a multigrain bun.",
+          "price": 9.49
+        }
+      ]
+    },
+    "fries": {
+      "name": "Fries",
+      "menu": [
+        {
+          "id": 1,
+          "name": "Sweet Potato Fries",
+          "description": "Sweet and crispy sweet potato fries, served with honey mustard sauce.",
+          "price": 15.99
+        },
+        {
+          "id": 2,
+          "name": "Belgian Fries",
+          "description": "Thick, crispy fries in the Belgian style, served with mayonnaise.",
+          "price": 12.99
+        },
+        {
+          "id": 3,
+          "name": "Classic Fries",
+          "description": "Traditional golden and crispy fries, perfect with any meal.",
+          "price": 9.99
+        },
+        {
+          "id": 4,
+          "name": "Parmesan Truffle Fries",
+          "description": "Gourmet fries topped with parmesan and a truffle sprinkle.",
+          "price": 19.99
+        },
+        {
+          "id": 5,
+          "name": "Sweet Potato Fries with Guacamole",
+          "description": "Sweet potatoes served with homemade guacamole.",
+          "price": 17.99
+        }
+      ]
+    },
+    "snacks": {
+      "name": "Snacks",
+      "menu": [
+        {
+          "id": 1,
+          "name": "Onion Rings",
+          "description": "Crispy onion rings fried to a golden brown, served with garlic sauce.",
+          "price": 8.99
+        },
+        {
+          "id": 2,
+          "name": "Mozzarella Sticks",
+          "description": "Mozzarella sticks in a crispy breading, served with marinara sauce.",
+          "price": 10.99
+        },
+        {
+          "id": 3,
+          "name": "Chicken Wings",
+          "description": "Juicy chicken wings in a spicy glaze, served with ranch dip.",
+          "price": 14.99
+        }
+      ]
+    },
+    "salads": {
+      "name": "Salads",
+      "menu": [
+        {
+          "id": 1,
+          "name": "Caesar Salad",
+          "description": "Traditional Caesar salad with grilled chicken, croutons, and Caesar dressing.",
+          "price": 18.99
+        },
+        {
+          "id": 2,
+          "name": "Greek Salad",
+          "description": "Fresh Greek salad with feta cheese, olives, tomatoes, and cucumber, drizzled with olive oil.",
+          "price": 16.99
+        },
+        {
+          "id": 3,
+          "name": "Quinoa Salad",
+          "description": "Light quinoa salad with avocado, chickpeas, and lemon dressing.",
+          "price": 19.99
+        }
+      ]
+    },
+    "drinks": {
+      "name": "Drinks",
+      "menu": [
+        {
+          "id": 1,
+          "name": "Coca-Cola",
+          "description": "Iconic carbonated drink, chilled and refreshing.",
+          "price": 5.99
+        },
+        {
+          "id": 2,
+          "name": "Mineral Water",
+          "description": "Pure, natural mineral water, available sparkling or still.",
+          "price": 4.99
+        },
+        {
+          "id": 3,
+          "name": "Fanta",
+          "description": "Refreshing carbonated drink with an orange flavor.",
+          "price": 5.99
+        },
+        {
+          "id": 4,
+          "name": "Sprite",
+          "description": "Light and refreshing carbonated drink with a lemon-lime flavor.",
+          "price": 5.99
+        },
+        {
+          "id": 5,
+          "name": "Orange Juice",
+          "description": "Freshly squeezed orange juice, rich in vitamin C.",
+          "price": 6.99
+        }
+      ]
+    }
+  },
+  "booking": {
+    "book": "Book a Table",
+    "required": "Required",
+    "partySize": "Party Size",
+    "phone": "Phone Number",
+    "enterPhone": "Enter Phone Number",
+    "fullName": "Full Name",
+    "enterName": "Enter Name",
+    "specialRequest": "Special Request",
+    "enterSpecialRequest": "Enter Special Request",
+    "date": "Date",
+    "time": "Time",
+    "submit": "Submit",
+    "success": "Rezerwacja dokonana!",
+    "tableSize": "Stolik dla",
+    "when": "Data"
+  },
+  "contact": {
+    "openingHours": "Opening Hours",
+    "monFri": "Monday - Friday",
+    "saturday": "Saturday",
+    "sunday": "Sunday"
+  }
+}

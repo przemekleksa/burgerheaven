@@ -4,7 +4,11 @@ import BurgerMenu from '../BurgerMenu/BurgerMenu';
 import styles from './NavBar.module.scss';
 import MenuList from './MenuList';
 
-const NavBar = () => {
+interface Props {
+  changeLanguage: (lng: string) => void;
+}
+
+const NavBar = ({ changeLanguage }: Props) => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
   const handleClick = () => {
     setIsOpen(prevVal => !prevVal);
@@ -29,8 +33,8 @@ const NavBar = () => {
   return (
     <div className={styles.root}>
       <BurgerMenu handleClick={handleClick} isOpen={isOpen} />
-      <div className={styles.menuList}>
-        <MenuList handleClick={closeMenu} isOpen={isOpen} />
+      <div className={styles.menuList} data-is-open={isOpen ? 'open' : 'closed'}>
+        <MenuList handleClick={closeMenu} isOpen={isOpen} changeLanguage={changeLanguage} />{' '}
       </div>
     </div>
   );
